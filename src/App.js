@@ -67,13 +67,14 @@ class App extends Component {
     <div className="App">
       {/* <nav>Dog shelter</nav> */}
       <Navbar {...this.props} />
+      <div className="container">
       <Routes>
               <Route exact path="/" Component={DogList } />
               <Route exact path="/dogs/:name" element={<DogBreed {...this.props} /> } />
               {/* <Route exact path="/Dog/Hazel" Component={DogBreed } /> */}
               {/* <Route exact path="/Dog/Tubby" Component={DogBreed } /> */}
       </Routes>
-      
+      </div>
     </div>
   );
   }

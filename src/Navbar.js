@@ -1,13 +1,14 @@
 import React, { Component } from "react";
+import "./Navbar.css";
 import { NavLink, Link } from "react-router-dom";
 
 class Navbar extends Component {
   render() {
     const dogLinks = this.props.dogs.map(dog => (
       <li className='nav-item' key={dog.name}>
-        <NavLink exact to={`/dogs/${dog.name}`} className='nav-link'>
+        <Link exact to={`/dogs/${dog.name}`} className='nav-link'>
           {dog.name}
-        </NavLink>
+        </Link>
       </li>
     ));
     return (
@@ -28,11 +29,11 @@ class Navbar extends Component {
           <span className='navbar-toggler-icon' />
         </button>
         <div className='collapse navbar-collapse' id='navbarNav'>
-          <ul className='navbar-nav'>
+          <ul className='navbar-nav mr-auto'>
             <li className='nav-item'>
-              <NavLink exact to='/' className='nav-link'>
+              <Link exact to='/' className='nav-link'>
                 Home
-              </NavLink>
+              </Link>
             </li>
             {dogLinks}
           </ul>
