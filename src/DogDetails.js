@@ -63,7 +63,7 @@ class DogDetails extends Component {
               ))}
             </ul>
             <div className='card-body'>
-              <Link to='/dogs' className='btn btn-info'>
+              <Link to='/' className='btn btn-info'>
                 Go Back
               </Link>
             </div>

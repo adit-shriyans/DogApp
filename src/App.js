@@ -7,6 +7,7 @@ import whiskey from "./whiskey.jpg";
 import { Route, Routes, useParams } from "react-router-dom";
 import './App.css';
 import { Component } from "react";
+import Navbar from "./Navbar";
 
 class App extends Component {
   static defaultProps={
@@ -64,7 +65,8 @@ class App extends Component {
     // }
   return (
     <div className="App">
-      <nav>Dog shelter</nav>
+      {/* <nav>Dog shelter</nav> */}
+      <Navbar {...this.props} />
       <Routes>
               <Route exact path="/" Component={DogList } />
               <Route exact path="/dogs/:name" element={<DogBreed {...this.props} /> } />
