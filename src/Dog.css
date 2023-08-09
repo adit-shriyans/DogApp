@@ -1,0 +1,21 @@
+.Dog{
+    /* border:1px solid #eee; */
+    width: auto;
+    height: auto;
+    padding: 30px;
+
+}
+
+.Dog-img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+.Dog-img:hover{
+    filter:grayscale(80); 
+}
+
+.Dog-name:hover{
+    color: red;
+
+}
